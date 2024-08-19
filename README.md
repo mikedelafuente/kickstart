@@ -11,7 +11,10 @@ New dev machine? Start here
     ```
 - Install Homebrew
     ```shell
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" touch ~/.zprofile echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile eval "$(/opt/homebrew/bin/brew shellenv)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    touch ~/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
     brew update
     brew upgrade
     echo 'export PATH=/usr/local/bin:$PATH' >> ~/.zshrc
@@ -32,9 +35,16 @@ New dev machine? Start here
   ```
 - Enable the ability to install fonts from Homebrew
   ```shell
-  brew tap homebrew/cask-fonts
   brew install --cask font-hack-nerd-font
   brew install --cask font-meslo-lg-nerd-font
+  brew install --case font-jetbrainsmono-nerd-font
+  brew install --case font-mononoki-nerd-font
+  brew install --case font-roboto-mono
+  brew install --case font-ubuntu-mono-nerd-font
+  ```
+  Alternately, you can install all of the fonts (not advised):
+  ```shell
+  brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs -I{} brew install --cask {} || true
   ```
 - Install Powerlevel10k
   ```shell
