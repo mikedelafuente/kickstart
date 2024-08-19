@@ -48,8 +48,9 @@ New dev machine? Start here
   ```
 - Install Powerlevel10k
   ```shell
-  brew install romkatv/powerlevel10k/powerlevel10k
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
   ```
+  Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in ~/.zshrc.
 - Configure Powerlevel10K
   ```shell
   p10k configure
