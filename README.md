@@ -51,6 +51,7 @@ New dev machine? Start here
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
   ```
   Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in ~/.zshrc.
+  Run `exec zsh` to trigger the install process. Here are the typical install options used:
   - Rainbow
   - Unicode
   - 24-hour format
