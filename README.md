@@ -1,4 +1,4 @@
-# Kickstart
+# Kickstart for .NET dev on a Mac
 New dev machine? Start here
 
 ## Setting up your environment
