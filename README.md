@@ -51,6 +51,21 @@ New dev machine? Start here
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
   ```
   Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in ~/.zshrc.
+  - Rainbow
+  - Unicode
+  - 24-hour format
+  - vertical
+  - flat
+  - flat
+  - Two Lines
+  - Disconnected
+  - No Frame
+  - Sparse
+  - Few Icons
+  - Fluent
+  - No Transient Prompt
+  - Verbose
+  - Apply Changes
 - Configure Powerlevel10K
   ```shell
   p10k configure
